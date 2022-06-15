@@ -1,4 +1,5 @@
-1. Java içerisinde JVM(sanal makina) barındırdığı için platform bağımlı değildir.
+###1. 
+   Java içerisinde JVM(sanal makina) barındırdığı için platform bağımlı değildir.
    Bu sayede Java platforma ihtiyaç duymadan kendi sanal makinası üzerinde gerekli dönüşümleri yapabilir.
    
 
