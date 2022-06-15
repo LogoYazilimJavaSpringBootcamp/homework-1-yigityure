@@ -41,36 +41,85 @@
         ArrayList; dinamik bir array oluşturmak için kullanılır. Elemanlar eklenen sırayla tutulur.
         
         ArrayList<String> arrayList = new ArrayList<String>();
-        list.add("One");
-        list.add("Two");
-        list.add("Three");
-        list.add("Dour");
+        arrayList.add("One");
+        arrayList.add("Two");
+        arrayList.add("Three");
+        arratList.add("Four");
         
-        Iterator itr = list.iterator();
+        Iterator itr = arrayList.iterator();
         while(itr.hasNext()) {
            System.out.println(itr.next());
         }
-        ```
+        
         Çıktı: 
             One
             Two
             Three
             Four
-        ```
+            
+        
       LinkedList
         LinkedList; ArrayList'in özelliklerine sahiptir. Elemanları listeye eklerken container oluşturur ve elemanı container'a ekler. Containerlar birbirine bağlanır.
         
         LinkedList<String> linkedList = new LinkedList<String>();
+        linkedList.add("One");
+        linkedList.add("Two");
+        linkedList.add("Three");
+        linkedList.add("Four");
+        
+        Iterator itr = linkedList.iterator();
+        while(itr.hasNext()) {
+           System.out.println(itr.next());
+        }
+        
+         Çıktı: 
+            One
+            Two
+            Three
+            Four
+            
         
       Vector
         Vector; ArrayList'e benzer. Fazladan kendine ait metodları vardır.
         
         Vector<String> vector = new Vector<String>();
+        vector.add("One");
+        vector.add("Two");
+        vector.add("Three");
+        vector.add("Dour");
+        
+        Iterator itr = vector.iterator();
+        while(itr.hasNext()) {
+           System.out.println(itr.next());
+        }
+        
+         Çıktı: 
+            One
+            Two
+            Three
+            Four
         
       Stack
         Stack; Vector sınıfının alt sınıfıdır. Last-in-first-out yapısındadır.
         
         Stack<String> stack = new Stack<String>();
+        stack.add("One");
+        stack.add("Two");
+        stack.add("Three");
+        stack.add("Four");
+        stack.pop();
+        
+        Iterator itr = stack.iterator();
+        while(itr.hasNext()) {
+           System.out.println(itr.next());
+        }
+        
+         Çıktı: 
+            One
+            Two
+            Three
+            Four
+            
         
   Queue
     Queue; first-in-first-out yapısında bir interface'dir.
@@ -81,9 +130,38 @@
     Implement edilebilecek sınıflar => Queue -> PriorityQueue, ArrayDeque
     
       PriorityQueue
-        PriorityQueue; önceliğe göre elemanlarınısıralayan bir sınıftır. null değer barındırmaz.
+        PriorityQueue; önceliğe göre elemanlarını sıralayan bir sınıftır. null değer barındırmaz.
         
-        PriorityQueue<String> priorityQueue=new PriorityQueue<String>();
+        PriorityQueue<String> priorityQueue = new PriorityQueue<String>();
+        priorityQueue.add("One");
+        priorityQueue.add("Two");
+        priorityQueue.add("Three");
+        priorityQueue.add("Four");
+        System.out.println(priorityQueue.element());  
+        System.out.println(priorityQueue.peek());  
+
+        Iterator itr = priorityQueue.iterator();  
+        while(itr.hasNext()){  
+           System.out.println(itr.next());  
+        }  
+        priorityQueue.remove();  
+        priorityQueue.poll();
+        
+        Iterator<String> itr2 = priorityQueue.iterator();  
+        while(itr2.hasNext()){  
+           System.out.println(itr2.next());  
+        }
+        
+        Çıktı: 
+            Four
+            Four
+            Four
+            One
+            Three
+            Two
+            Three
+            Two
+            
         
       Deque
         Deque; Queue interface'inden türeyen bir interface'dir. Listenin hem başından hem de sonundan işlem yapabilme olanağı sağlar.
@@ -94,6 +172,21 @@
         ArrayDeque; Deque interface'ini kullanabilmeyi sağlayan sınıftır.
         
         Deque<String> arrayDeque = new ArrayDeque<String>();
+        arrayDeque.add("One");
+        arrayDeque.add("Two");
+        arrayDeque.add("Three");
+        arrayDeque.add("Four");
+        
+        for (String str : arrayDeque) {  
+           System.out.println(str); 
+        }
+        
+         Çıktı: 
+            One
+            Two
+            Three
+            Four
+            
         
   Set
     Set; tekrarlanamayan elemanları içeren listedir. Interface'dir.
@@ -108,11 +201,43 @@
           HashSet; depolamak için hash tablosunu kullanır.
           
           HashSet<String> hashSet = new HashSet<String>();
+          hashSet.add("One");
+          hashSet.add("Two");
+          hashSet.add("Three");
+          hashSet.add("One");
+          hashSet.add("Four");
+        
+          for (String str : hashSet) {  
+            System.out.println(str); 
+          }
+        
+          Çıktı: 
+             One
+             Four
+             Two
+             Three
+             
           
         LinkedHashSet
           LinkedHashSet; LinkedList sınıfının Set interface'i ile kullanılmasıdır. Tekrarlayan eleman barındırmaz, null değer almaz.
           
           LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
+          linkedHashSet.add("One");
+          linkedHashSet.add("Two");
+          linkedHashSet.add("Three");
+          linkedHashSet.add("One");
+          linkedHashSet.add("Four");
+        
+          for (String str : linkedHashSet) {  
+            System.out.println(str); 
+          }
+        
+          Çıktı: 
+             One
+             Two
+             Three
+             Four
+             
           
         SortedSet
           SortedSet; Set interface'inden türetilmiştir. Elemanların büyükten küçüğe ya da küçükten büyüğe sıralanması için kullanılır.
@@ -122,6 +247,23 @@
         TreeSet
           TreeSet; depolamak için ağaç yapısını kullanır. Bu sayede çok daha hızlı arama sonucu sağlar. Elemanlar küçükten büyüğe doğru sıralanır.
           
+          TreeSet<String> treeSet = new TreeSet<String>();
+          treeSet.add("One");
+          treeSet.add("Two");
+          treeSet.add("Three");
+          treeSet.add("One");
+          treeSet.add("Four");
+        
+          for (String str : treeSet) {  
+            System.out.println(str); 
+          }
+        
+          Çıktı: 
+             Four
+             One
+             Three
+             Two
+             
           
 5. Main
    ```
