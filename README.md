@@ -41,6 +41,21 @@
         ArrayList; dinamik bir array oluşturmak için kullanılır. Elemanlar eklenen sırayla tutulur.
         
         ArrayList<String> arrayList = new ArrayList<String>();
+        list.add("One");
+        list.add("Two");
+        list.add("Three");
+        list.add("Dour");
+        
+        Iterator itr = list.iterator();
+        while(itr.hasNext()) {
+           System.out.println(itr.next());
+        }
+        
+        Çıktı: 
+            One
+            Two
+            Three
+            Four
         
       LinkedList
         LinkedList; ArrayList'in özelliklerine sahiptir. Elemanları listeye eklerken container oluşturur ve elemanı container'a ekler. Containerlar birbirine bağlanır.
