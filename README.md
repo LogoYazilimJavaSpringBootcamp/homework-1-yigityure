@@ -50,13 +50,13 @@
         while(itr.hasNext()) {
            System.out.println(itr.next());
         }
-        
+        ```
         Çıktı: 
             One
             Two
             Three
             Four
-        
+        ```
       LinkedList
         LinkedList; ArrayList'in özelliklerine sahiptir. Elemanları listeye eklerken container oluşturur ve elemanı container'a ekler. Containerlar birbirine bağlanır.
         
