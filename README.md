@@ -169,18 +169,74 @@
         receiptList.GetCustomersByLowerPrice(500);
         
         System.out.println("\n");
-        System.out.println("-------Şirketlerin ilk parametre olarak girilen aydaki faturalarının ortalamasının,"
-        		+ " ikinci parametre olarak girilen değerden düşük olan şirketlerin sektörü---------\n");
+        System.out.println("-------Şirketlerin ilk parametre olarak girilen aydaki faturalarının ortalamasının, ikinci parametre olarak girilen değerden düşük olan şirketlerin sektörü---------\n");
         receiptList.GetDepartmentByLowerAvgReceipt(6, 750);        
     }
     ```
-   ![image](https://user-images.githubusercontent.com/66094687/173880593-f8fee711-572c-417b-9c28-b3659d6de8c7.png)
-   ![image](https://user-images.githubusercontent.com/66094687/173880715-f91b1059-229e-45bf-a495-4da3a533d923.png)
-   ![image](https://user-images.githubusercontent.com/66094687/173881068-5f2dbbf4-5232-4dd1-8e46-87588a94693b.png)
+   
    Çıktı
-   ![image](https://user-images.githubusercontent.com/66094687/173881358-8b00c390-fcd6-4e13-b23c-18bc01798ec0.png)
-   ![image](https://user-images.githubusercontent.com/66094687/173881436-4cfd84d1-a780-466c-9cfa-654cc88aa0c5.png)
-   ![image](https://user-images.githubusercontent.com/66094687/173881577-61b550dc-eda2-4ac3-9006-8b991a197664.png)
+   ```
+   -------Tüm müşteriler---------
 
+Ahmet Çelik
+Soner Sağlam
+Sezen Kaya
+Merve Yılmaz
+Okan Kara
+Cansu Aydın
+
+
+-------İçerisinde parametre olarak girilen harf olan müşterilerin listesi---------
+
+Cansu Aydın
+
+
+-------Parametre olarak girilen ayda kayıt olanlar ve toplam harcamaları---------
+
+Soner Sağlam 2300
+Sezen Kaya 1550
+Okan Kara 1480
+Cansu Aydın 1250
+
+
+-------Tüm faturalar---------
+
+Receipt [price=580, customerName=Okan Kara, companyName=Eti, date=2022-05-17]
+Receipt [price=1400, customerName=Büşra Eren, companyName=Beko, date=2022-03-16]
+Receipt [price=1700, customerName=Büşra Eren, companyName=Logo, date=2022-06-15]
+Receipt [price=1950, customerName=Soner Sağlam, companyName=Arçelik, date=2022-06-15]
+Receipt [price=1650, customerName=Ahmet Çelik, companyName=Arçelik, date=2022-06-15]
+Receipt [price=150, customerName=Ahmet Çelik, companyName=Eti, date=2022-06-15]
+Receipt [price=450, customerName=Ahmet Çelik, companyName=Eti, date=2022-05-10]
+Receipt [price=350, customerName=Soner Sağlam, companyName=Logo, date=2022-04-30]
+Receipt [price=1550, customerName=Sezen Kaya, companyName=Beko, date=2022-06-15]
+Receipt [price=1050, customerName=Merve Yılmaz, companyName=Eti, date=2022-06-15]
+Receipt [price=900, customerName=Okan Kara, companyName=Arçelik, date=2022-05-03]
+Receipt [price=1250, customerName=Cansu Aydın, companyName=Logo, date=2022-06-15]
+
+
+-------Parametre olarak girilen değerden yüksek tüm faturalar---------
+
+Receipt [price=1700, customerName=Büşra Eren, companyName=Logo, date=2022-06-15]
+Receipt [price=1950, customerName=Soner Sağlam, companyName=Arçelik, date=2022-06-15]
+Receipt [price=1650, customerName=Ahmet Çelik, companyName=Arçelik, date=2022-06-15]
+Receipt [price=1550, customerName=Sezen Kaya, companyName=Beko, date=2022-06-15]
+
+
+-------Parametre olarak girilen değerden yüksek tüm faturaların ortalaması---------
+
+1712
+
+
+-------Parametre olarak girilen değerden düşükk bir faturaya sahip olan müşteriler---------
+
+Ahmet Çelik
+Soner Sağlam
+
+
+-------Şirketlerin ilk parametre olarak girilen aydaki faturalarının ortalamasının, ikinci parametre olarak girilen değerden düşükk olan şirketlerin sektörü---------
+
+Gıda
+```
 
 
