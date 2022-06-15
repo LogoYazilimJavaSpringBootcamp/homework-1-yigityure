@@ -4,7 +4,9 @@
    Bu sayede Java platforma ihtiyaç duymadan kendi sanal makinası üzerinde gerekli dönüşümleri yapabilir.
    
 
-2. Çoklu kalıtımda, bir sınıf kendisine ait başka sınıflar türetebilir. Ancak Java bunu desteklemez. Java'da bir sınıf sadece bir sınıf türetebilir.
+### 2. Soru
+   
+  Çoklu kalıtımda, bir sınıf kendisine ait başka sınıflar türetebilir. Ancak Java bunu desteklemez. Java'da bir sınıf sadece bir sınıf türetebilir.
   Bir A sınıfı olsun. A sınıfı eğer B ve C sınıflarını türetirsin. D sınıfı da B ve C sınıflarından türetilsin.
   Eğer A sınıfındaki bir metot, B ve C sınıflarında override edilirse; D sınıfı hangi sınıfın (B veya C) metodununu kullanacağını bilemez ve belirsizlik oluşur.
   Bu durumun önüne geçmek için Java Interface'leri kullanır.
@@ -12,12 +14,14 @@
   C++ çoklu kalıtım kullanan bir dildir. C++ belirsizliği önlemek için, türetilen sınıfın ebeveny sınıflarının yapıcı metodlarını kendisine verilen sırayla çağırır.
   
   
-3. Build tool, kaynak kodlarının çalıştırılabilir bir dosya haline dönüştürülmesini sağlayan araçtır (örneğin .exe).
+### 3. Soru
+   Build tool, kaynak kodlarının çalıştırılabilir bir dosya haline dönüştürülmesini sağlayan araçtır (örneğin .exe).
   Dönüşüm yapılırken gerekli kütüphaneler yüklenir, kaynak kod makina diline derlenir, ardından paketlenir.
   
   Java için kullanılan build toollardan en bilinenleri; Ant, Maven ve Gradle'dır.
   
-4. Collections frameworklerinin en önemli özelliği arraylarin aksine eleman sınırlaması olmamasıdır. Bir array tanımlarken aynı anda eleman sayısı da belirtilmelidir.
+### 4. Soru
+   Collections frameworklerinin en önemli özelliği arraylarin aksine eleman sınırlaması olmamasıdır. Bir array tanımlarken aynı anda eleman sayısı da belirtilmelidir.
   Collections frameworkleri bu durumun önüne geçer ve dinamik bir array sunar.
   
   Collections framework -> List, Queue, Set
