@@ -27,7 +27,7 @@
   Collections framework -> List, Queue, Set
   Hepsi birer interface'dir.
   
-  List 
+   
     List; istenilen herhangi bir tipte dinamik bir liste oluşturulmasını sağlar. Tekrar eden elemanlar olabilir.
     
     List<Integer> list1 = new ArrayList<Integer>();
@@ -121,7 +121,7 @@
             Four
             
         
-  Queue
+  
     Queue; first-in-first-out yapısında bir interface'dir.
       
     Queue<String> queue1 = new PriorityQueue();
@@ -188,7 +188,7 @@
             Four
             
         
-  Set
+  
     Set; tekrarlanamayan elemanları içeren listedir. Interface'dir.
     
     Set<String> s1 = new HashSet<String>();
