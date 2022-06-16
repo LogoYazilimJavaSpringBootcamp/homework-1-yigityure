@@ -401,7 +401,7 @@ Ahmet Çelik
 Soner Sağlam
 
 
--------Şirketlerin ilk parametre olarak girilen aydaki faturalarının ortalamasının, ikinci parametre olarak girilen değerden düşükk olan şirketlerin sektörü---------
+-------Şirketlerin ilk parametre olarak girilen aydaki faturalarının ortalamasının, ikinci parametre olarak girilen değerden düşük olan şirketlerin sektörü---------
 
 Gıda
 ```
