@@ -342,7 +342,7 @@
    
    Çıktı
 ```
-   -------Tüm müşteriler---------
+-------Tüm müşteriler---------
 
 Ahmet Çelik
 Soner Sağlam
