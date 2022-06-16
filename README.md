@@ -27,7 +27,8 @@
   Collections framework -> List, Queue, Set
   Hepsi birer interface'dir.
   
-   
+  List
+  
     List; istenilen herhangi bir tipte dinamik bir liste oluşturulmasını sağlar. Tekrar eden elemanlar olabilir.
     
     List<Integer> list1 = new ArrayList<Integer>();
