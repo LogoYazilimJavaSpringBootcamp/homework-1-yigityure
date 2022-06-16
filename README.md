@@ -122,6 +122,7 @@
             Four
             
         
+  Queue
   
     Queue; first-in-first-out yapısında bir interface'dir.
       
@@ -189,6 +190,7 @@
             Four
             
         
+  Set
   
     Set; tekrarlanamayan elemanları içeren listedir. Interface'dir.
     
