@@ -339,10 +339,9 @@
         System.out.println("-------Şirketlerin ilk parametre olarak girilen aydaki faturalarının ortalamasının, ikinci parametre olarak girilen değerden düşük olan şirketlerin sektörü---------\n");
         receiptList.GetDepartmentByLowerAvgReceipt(6, 750);        
     }
-    ```
+```
    
-   Çıktı
-   
+   Çıktı  
 ```
 -------Tüm müşteriler---------
 
